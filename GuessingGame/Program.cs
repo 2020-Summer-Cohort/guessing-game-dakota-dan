@@ -24,7 +24,17 @@ namespace GuessingGame
             }
             else
             {
+
                 Console.WriteLine("Sorry, wrong number.");
+                if (number <7)
+                {
+                    Console.WriteLine("Too low");
+                }
+                else
+                {
+                    Console.WriteLine("Too high");
+                }
+
                 Console.WriteLine("Try one more time");
                 number = Convert.ToInt32(Console.ReadLine());
                 if (number == 7)
