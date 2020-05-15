@@ -14,9 +14,13 @@ namespace GuessingGame
             {
                 Console.WriteLine("You're a winner!");
             }
+            else if (number == 0)
+            {
+                Console.WriteLine("Pick a number, and if you guess correctly, you win!");
+            }
             else
             {
-                Console.WriteLine("Sorry, wrong number");
+                Console.WriteLine("Sorry, wrong number.");
             }
         }
     }
